@@ -1,19 +1,24 @@
 coordsA = input('enter coordinates of point A, seperated by comma ')
 coordsA = coordsA.split(',')
+
+coordsA = [int(i) for i in coordsA]
+
 coordsB = input('enter coordinates of point B, seperated by comma ')
 coordsB = coordsB.split(',')
 
+coordsB = [int(i) for i in coordsB]
 
-if int(coordsA[0]) > int(coordsB[0]):
-    length = int(coordsA[0]) - int(coordsB[0])
+
+if coordsA[0] > coordsB[0]:
+    length = coordsA[0] - coordsB[0]
 else:
-    length = int(coordsB[0]) - int(coordsA[0])
+    length = coordsB[0] - coordsA[0]
 
 
-if int(coordsA[1]) > int(coordsB[1]):
-    hight = int(coordsA[1]) - int(coordsB[1])
+if coordsA[1] > coordsB[1]:
+    hight = coordsA[1] - coordsB[1]
 else:
-    hight = int(coordsB[1]) - int(coordsA[1])
+    hight = coordsB[1] - coordsA[1]
 
 
 
