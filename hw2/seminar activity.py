@@ -39,15 +39,21 @@
 # 3. Напишите программу, в которой пользователь будет задавать две
 #  строки, а программа - определять количество вхождений одной строки в другой.
 
-text1 = input('Введите первую строку: ')
-text2 = input('Введите вторую строку: ')
-counter = 0
-if len(text1) > len(text2): # сравниваем длины строк
-    for i in range(len(text1)):
-        if text1[i:i + len(text2)] == text2: # проверяем, равна ли посдтрока в строке по длинне среза, второй строки
-            counter += 1
-else:
-    for i in range(len(text2)):
-        if text2[i:i + len(text1)] == text1:
-            counter += 1
-print('Колличество вхождений второй строки в первую равно: ', counter)
+# text1 = input('Введите первую строку: ')
+# text2 = input('Введите вторую строку: ')
+# counter = 0
+# if len(text1) > len(text2): # сравниваем длины строк
+#     for i in range(len(text1)):
+#         if text1[i:i + len(text2)] == text2: # проверяем, равна ли посдтрока в строке по длинне среза, второй строки
+#             counter += 1
+# else:
+#     for i in range(len(text2)):
+#         if text2[i:i + len(text1)] == text1:
+#             counter += 1
+# print('Колличество вхождений второй строки в первую равно: ', counter)
+
+
+
+a = [1,25,7,4,8,2,36]
+ans = [(i,i**2) for i in a if i%2==0]
+print(ans)
